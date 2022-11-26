@@ -5,8 +5,15 @@ public class FindMaxInSeq {
     public static int max() {
 
         // Put your code here
+        Scanner sc = new Scanner(System.in);
+        int max = sc.nextInt(); // Assigning first input as a max value, then we will compare with the rest
 
-        return 0;
+        while (true) {
+            int num = sc.nextInt();
+            if (num == 0) break; // If it is zero, don't do any value assignment
+            if (num > max) max = num; // Applying max selection algorithm
+        }
+        return max;
     }
 
     public static void main(String[] args) {
